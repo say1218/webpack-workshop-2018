@@ -1,6 +1,12 @@
 // commonjs module 
 
-const makeButton = (btnName) => `Button: ${btnName}`;
+const makeButton = (btnName) => {
+   const btnlabel = btnName;
+   const btn = document.createElement('button');
+   btn.innerText = btnlabel;
+
+   return btn;
+}
 const red = 'color:red';
 const blue = 'color:blue';
 

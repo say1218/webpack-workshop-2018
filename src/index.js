@@ -1,10 +1,14 @@
 import nav from "./nav";
-import { top, bottom } from "./footer";
-import { makeButton } from "./button";
+import { footer } from "./footer";
 
- 
-console.log('hello ', nav);
-console.log('hello ', top);
-console.log('hello ', bottom);
-console.log('hello ', makeButton('First btn'));
+import { top, bottom } from "./footer";
+import { makeButton , red } from "./button";
+
+
+let btn = makeButton('First btn');
+btn.style = red;
+console.log(footer);
+document.body.appendChild(btn);
+document.body.appendChild(footer);
+
 
